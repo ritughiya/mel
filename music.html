@@ -1,0 +1,19 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+
+<div class="content">
+{% assign sorted = site.music | sort: 'date' | reverse %}
+{% for song in sorted %}
+	<div class="song container">
+			<div class="item">{{song.content}}</div>
+			<div class="title"><a href="{{song.link}}" target="_blank"><i>{{song.title}}</i> - {{song.artist}}</a></div>
+			<div class="caption">{{song.caption}}</div>
+			<div class="date">{{song.date | date_to_string}}</div>
+	</div>
+	{% endfor %}
+</div>

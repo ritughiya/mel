@@ -1,0 +1,16 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+---
+
+<div class="content">
+{% assign sorted = site.sketches | sort: 'date' | reverse %}
+{% for sketches in sorted %}
+	<div class="song container">
+			<div class="item">{{sketches.content}}</div>
+			<div class="caption"><a href="{{sketches.link}}" target="_blank">{{sketches.date  | date_to_string }}</a></div>
+	</div>
+	{% endfor %}
+</div>

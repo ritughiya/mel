@@ -1,0 +1,47 @@
+
+title: Melodie Stancato
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+ Melodie Stancato
+baseurl: "" 
+url: "" 
+twitter_username: jekyllrb
+github_username:  jekyll
+
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+kramdown:
+  parse_block_html: true
+permalink: pretty
+collections:
+  movement:
+    output: true
+    permalink: ":path/"
+  music:
+    output: true
+    permalink: "/:path/"
+  sketches:
+    output: true
+    permalink: "/:path/"
+  contact:
+    output: true
+    permalink: "/:path/"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "music"
+    values:
+      layout: "song"
+
+  # classes:
+  #   output: true
+  #   permalink: /classes/:path/
+  # faqs:
+  #   output: false
+
+# pages:
+  # permalink: /:title/

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-ca" id="html" class="reverse">
+<head>
+	<meta charset="utf-8">
+	<title>Melodie Stancato</title>
+	<link href="{{site.baseurl}}/css/normalize.css" rel="stylesheet">
+	<link href="{{site.baseurl}}/css/common.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="home">
+
+<header class="flex sticky-header">
+	{% include nav.html %}
+</header>
+
+<div class="top-padding-index"></div>
+
+{{content}}
+
+<footer class="sticky-footer credits">
+	<a href="{{site.url}}/contact/" class="blackout" {% if page.url == '/about/' %}class="current"{% endif %}>About / Contact</a>
+</footer>
+
+
+
+</body>
+</html>
