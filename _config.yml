@@ -3,8 +3,8 @@ title: Melodie Stancato
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
  Melodie Stancato
-baseurl: "ritu.online/mel" 
-url: "" 
+baseurl: "" 
+url: "ritu.online/mel" 
 twitter_username: jekyllrb
 github_username:  jekyll
 
