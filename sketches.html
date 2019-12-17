@@ -8,7 +8,7 @@ layout: default
 <div class="content">
 {% assign sorted = site.sketches | sort: 'date' | reverse %}
 {% for sketches in sorted %}
-	<div class="song container">
+	<div class="sketch song container">
 			<div class="item">{{sketches.content}}</div>
 			<div class="caption"><a href="{{sketches.link}}" target="_blank">{{sketches.date  | date_to_string }}</a></div>
 	</div>

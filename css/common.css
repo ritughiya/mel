@@ -129,6 +129,10 @@ justify-content: space-between;
 	border-bottom: 1px solid;
 }
 
+.sketch{
+	width: 40vw !important;
+}
+
 .video a,
 .song a{
 	color: #000;
